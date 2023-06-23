@@ -1,0 +1,790 @@
+/* Home, Post style, baixar style. */
+*{
+margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;text-rendering: geometricPrecision;}
+html {overflow-y: scroll;}
+
+.item-row-author .content {
+width: 100%;
+height: auto;
+box-sizing: border-box;
+overflow-x: auto;
+overflow-y: hidden;
+margin: 0;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+display: inline-flex;
+position: relative;
+flex-wrap: wrap;
+padding: 10px 0 20px 20px;
+justify-content: space-evenly;
+}
+.Item-Row .content {
+width: 100%;
+height: auto;
+box-sizing: border-box;
+overflow-x: auto;
+overflow-y: hidden;
+margin: 0;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+display: inline-flex;
+position: relative;
+}
+.ITEM {
+min-width: 100px;
+width: 100px;
+height: 100%;
+position: relative;
+vertical-align: top;
+margin: 0 10px 10px 0;
+white-space: normal;
+line-height: 1.2;
+}
+.special .ITEM {
+width: 215px;
+display: table;
+}
+.special .ITEM > img.feature {
+width: 215px;
+border-radius: 10px;
+margin-bottom: 10px;
+position: relative;
+top: auto;
+right: auto;
+bottom: 0;
+left: 0;
+z-index: 0;
+display: block;
+color: white;
+font-size: 12px;
+line-height: 105px;
+text-align: center;
+font-weight: 300;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+display: -webkit-box;
+cursor:pointer;
+}
+.special .ITEM figure {
+height: 40px;
+float: left;
+}
+.special .ITEM figure img {
+width: 40px;
+}
+.special .ITEM .author, .special .ITEM .name, .special .ITEM .description {
+padding-left: 10px;
+display: -webkit-box;
+text-align: left;
+}
+.special .ITEM .description {
+margin-top: 2px;
+}
+.ITEM figure {
+width: auto;
+height: 100px;
+margin-bottom: 10px;
+text-align: center;
+cursor: pointer;
+}
+.ITEM figure img {
+max-height: 100px;
+max-width: 100px;
+width: auto;
+height: auto;
+border-radius: 10px;
+}
+.ITEM div.author {
+  font-family: geomanistmedium, sans-serif;
+  color: #4CAF50;
+  font-size: 12px;
+  font-weight: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ITEM div.name {
+font-family: 'geomanistmedium', sans-serif;
+color: #1F4E5A;
+font-size: 12px;
+word-break: break-word;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-align: center;
+}
+.ITEM div.name svg {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: 0;
+  background: white;
+  border-radius: 20%;
+  border: 1px solid #A4C0C7;
+  padding: 5px;
+}
+.ITEM div.description {
+font-family: 'geomanistregular', sans-serif;
+color: #A4C0C7;
+font-size: 12px;
+margin-top: 5px;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-align: center;
+}
+.ITEM > img {
+position: absolute;
+top: -5px;
+right: auto;
+bottom: auto;
+left: -5px;
+z-index: 1;
+}
+.Item-Row .more {
+padding: 0;
+-webkit-appearance: none;
+border: 0;
+z-index: 1;
+position: relative;
+background: transparent;
+cursor: pointer;
+vertical-align: middle;
+}
+.Item-Row .more svg {
+transform: rotate(180deg) scale(0.5);
+margin: 0;
+}
+.Item-Row {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 996px) {
+  .Item-Row .content::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Item-Row .content .item:last-child {
+  padding-right: 10px;
+}
+
+@media (min-width: 996px) {
+  .Item-Row .content .item:last-child {
+    padding-right: 0;
+  }
+}
+@media (min-width: 996px) {
+.Item-Row {
+max-width: 996px;
+margin: 0 auto 40px;
+}
+.Item-Row .content {
+display: flex;
+flex-wrap: wrap;
+padding: 0 0 0 20px;
+}
+.ITEM {
+margin-right: 22px;
+}
+.special .ITEM {
+width: 222px;
+}
+.special .ITEM > img.feature {
+margin-bottom: 10px;
+width: 222px;
+height: auto;
+}
+}
+@media (prefers-color-scheme: dark) {
+.ITEM div.name {color: #fff;}
+.ITEM div.description {color: #A4C0C7;}
+.ITEM figure img {color: white;}
+.Item-Row .more {color: white;}
+}
+
+/*da para subir pro topo */
+/* tem nos 2 */
+a,b,body,dd,dt,figure,form,h1,h2,h3,h4,hgroup,html,img,li,nav,ol,p,section,span,table,tbody,td,th,thead,tr,tt,ul{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;text-rendering: geometricPrecision;}
+html {overflow-y: scroll;}
+body > .content {max-width: 996px;min-height: 1000px;margin: auto;background: white;position: relative;}
+a {text-decoration: none;color: inherit;cursor:pointer;}
+section {position: relative;overflow: hidden;}
+section .content {padding: 0 10px 40px; clear: both;}
+
+
+section .title-row {display: flex;align-items: center;justify-content: flex-start;padding: 10px;}
+section .title {font-family: 'geomanistmedium', sans-serif;color: #1F4E5A;font-size: 16px;text-transform: capitalize;}
+section .title-row + span {font-family: 'geomanistregular', sans-serif;color: #1F4E5A;font-size: 14px;padding: 0 10px 0;display: block;line-height: 20px; margin-bottom: 20px;}
+section .title + .more {padding: 0 10px 0;}
+@media (min-width: 996px) {
+section .title-row {padding: 10px 20px 20px;}
+section .title {font-size: 18px;}
+section .content {padding: 0 20px 15px;}
+section .title-row + span {padding: 0 20px 10px;}
+
+section .title + .more svg {
+transform: rotate(180deg);
+height: fit-content;
+}
+
+body > .content {background: #0F292F;}
+
+section .title {color: white;}
+section .title-row + span {color:#A4C0C7;}
+section .title + span {color: #ccc;}
+}
+
+h1.top-title-home {
+padding: 5px 20px 3px;
+margin: 5px 10px 5px;
+height: auto;
+font-size: 8px;
+text-transform: uppercase;
+font-weight: 300;
+color: white;
+background: #00AAD5;
+text-align: center;
+border-radius: 10px;
+}
+h1.top-title-home b {
+font-family: 'geomanistmedium', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+h1.top-title-home {
+color: #fff;
+}
+}
+@media (min-width: 996px) {
+h1.top-title-home {
+padding: 5px 20px 3px;
+font-size: 10px;
+text-transform: uppercase;
+font-weight: 300;
+margin: 0 20px 10px;
+}
+}
+
+feature {
+position: relative; width:100%;padding: 0 10px;display: block;box-sizing: border-box;
+}
+feature .content {
+position: relative; width:100%; height:fit-content;min-height: 45vw;background: #A4C0C7;border-radius: 10px;overflow: hidden;
+}
+feature .content .feature-image {
+object-fit: cover;
+width: 100%;
+height: 100%;
+display: block;
+cursor: pointer;
+}
+feature .content .text {
+position: absolute;
+bottom: 0;
+width: 100%;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+color: white;
+padding: 10px;
+box-sizing: border-box;
+font-size: 14px;
+}
+feature .content .text a p {
+font-weight: 600;
+color: white;
+font-size: 14px;
+line-height: 1;
+}
+feature .content .text p {
+font-weight: 300;
+color: #ccc;
+font-size: 10px;
+}
+@media (min-width: 996px) {
+feature {perspective: 500px;}
+feature .content {height: 400px; width: fit-content;min-width: 820px;margin: auto;min-height: inherit;z-index: 1;}
+feature:before {
+top: 110px;
+content: '';
+width: 97px;
+height: 180px;
+position: absolute;
+left: 0;
+background: rgb(43,141,168);
+background: linear-gradient(90deg, rgba(95,206,236,1) 0%, rgba(43,141,168,1) 100%);
+transform: rotateY(90deg);
+}
+feature:after {
+top: 110px;
+content: '';
+width: 97px;
+height: 180px;
+position: absolute;
+right: 0;
+background: rgb(45,112,155);
+background: linear-gradient(90deg, rgba(43,141,168,1) 0%, rgba(95,206,236,1) 100%);
+transform: rotateY(-90deg);
+}
+}
+@media (prefers-color-scheme: dark) {
+feature .content {
+background: #1F4E5A;
+color:white;
+}
+feature:before {
+background: rgb(158,158,158);
+background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(54,54,54,1) 100%);
+opacity: 0.5;
+}
+feature:after {
+background: rgb(158,158,158);
+background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(158,158,158,1) 100%);
+opacity: 0.5;
+}
+}
+feature p {
+text-align: right;
+}
+@media (min-width: 996px) {
+feature p {
+}
+}
+
+feature + nav ul {
+font-family: 'geomanistmedium', sans-serif;z-index:2;box-sizing: border-box;height: auto;overflow-x: scroll;overflow-y: hidden;padding: 0 0 0 10px;text-align: center; margin: 0;white-space: nowrap;width: 100%;-webkit-overflow-scrolling: touch;padding-bottom: 13px;display: block;position: relative;
+}
+feature + nav ul li {
+font-size: 10px;display: inline-block;height: auto;margin: 10px 5px 0 0;vertical-align: top;cursor: pointer;width: auto;background: white;text-transform: uppercase;border: 1px solid #00AAD5;border-radius: 10px;
+}
+feature + nav ul li a {
+color: #00AAD5;
+padding: 10px 10px 8px;
+display: block;
+}
+feature + nav {
+display: grid;cursor:auto;
+}
+@media (min-width: 996px) {
+feature + nav {margin: 0 auto 0;bottom: 0;left: 0;right: 0;background: white;position: relative;z-index: 3;}
+feature + nav ul {white-space: normal;overflow-x: auto;}
+feature + nav ul li {font-size: 12px;}
+}
+@media (prefers-color-scheme: dark) {
+feature + nav ul li {background: #1F4E5A;border:0;}
+feature + nav {background: transparent;}
+feature + nav ul li a {color: #fff;}
+}
+
+/* css do post */
+body {
+background: #eeeeee;
+font-family: 'geomanistregular', sans-serif;
+margin: 0;
+}
+@media (prefers-color-scheme: dark) {
+body {background: #000;}
+body > .content {background: #0F292F;}
+section .title {color: white;}
+section .title-row + span {color:#A4C0C7;}
+.nav-main {background: #1F4E5A;}
+.ad .title {color:#ccc;}
+section .title + span {color: #ccc;}
+.panel {background: #1F4E5A;}
+}
+
+
+.detail {font-family: 'geomanistregular', sans-serif;color:#333333;z-index: 1;position: relative;}
+.detail > div {display: table-cell;vertical-align: top;margin-bottom: 10px;}
+.detail .icon {min-width: 120px;height: 114px;}
+.detail .icon img {max-height: 100px;max-width: 100px;width: auto;height: auto;margin: 0 10px 10px;font-size: 12px;word-break: break-word;border-radius: 10px;}
+.detail .info h1 {font-family: 'geomanistmedium', sans-serif;font-size: 18px;line-height: 18px;word-break: break-word;font-weight: initial;}
+.detail .info .version {font-family: 'geomanistregular', sans-serif;font-size: 12px;color:#00AAD5;font-weight: 300;margin-top: 27px;word-break: break-all;}
+
+.detail .info .autor {font-family: 'geomanistregular', sans-serif;font-size: 12px;color: #A4C0C7;margin-bottom: 5px; margin-top: 5px;font-weight: 300;display: flex;}
+.detail .info .autor a {padding: 5px 0;}
+.detail .info span.onBoard {color :#1F4E5A;background: #FFC94F;border-radius: 10px;padding: 4px 10px 3px;font-weight: 400;font-size: 8px; display: inline-flex;text-transform: uppercase;float:left;
+margin-right: 5px;border: 1px solid #FFC94F;}
+.detail .info > div {margin-top: 3px;}
+.detail .stats {font-family: 'geomanistregular', sans-serif;display: flex;height:15px;box-sizing: border-box;font-size: 12px;padding: 0 10px 0;color:#1F4E5A;overflow-y: hidden; white-space: nowrap; width: 100%; -webkit-overflow-scrolling: touch;line-height: 19px;}
+.detail .stats div.dwstat img {filter: brightness(0) saturate(100%) invert(67%) sepia(1%) saturate(0%) hue-rotate(205deg) brightness(92%) contrast(93%);}
+.detail .stats img {filter: brightness(0) saturate(100%) invert(42%) sepia(96%) saturate(1431%) hue-rotate(159deg) brightness(97%) contrast(103%);position: relative;top: 1px;}
+.detail .stats .blue {cursor: pointer;}
+.detail h2 {font-family: 'geomanistregular', sans-serif;font-size: 14px;font-weight: 300;padding: 10px;color:#1F4E5A;}
+.button-group {display: block;}
+.button h3, .button strong {font-family: 'geomanistregular', sans-serif;font-size: 16px; line-height: 20px;display: block; align-self: center;}
+.button p {font-size: 10px;font-weight: 300;display: inline-flex;margin-right: 10px;text-transform: capitalize;font-family: 'geomanistregular', sans-serif;}.button strong {margin-top: 5px; text-align: left;}
+.button.last {background: #00AAD5;}
+.button.download, .button.last {cursor: pointer;}
+.button.download, .button.last {min-width: 200px;height: initial;box-sizing: border-box;order:2;border: 0; padding: 10px 20px;}
+.button.download {background: #348402;}
+.button.download {background: #4CAF50;}
+.button.version {font-family: 'geomanistmedium', sans-serif;border:1px solid #00AAD5;min-width: max-content;margin-top: 0; color:#00AAD5;font-size: 10px;text-transform: uppercase;padding: 10px 10px 8px;}
+article {color: #1F4E5A;padding: 10px;font-family: 'geomanistregular', sans-serif;font-size: 14px;line-height: 2;clear: both; margin-bottom: 30px;}
+
+article .text-description {
+  word-break: break-word;
+}
+
+article .text-description a {
+  color: #00AAD5;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+article b {font-family: 'geomanistmedium', sans-serif;}
+article h2 {font-family: 'geomanistmedium', sans-serif;font-size: 16px;}
+article h2 span {font-family: 'geomanistregular', sans-serif;}
+article h3 {
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: geomanistmedium, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  article h3 {
+    color: white;
+  }
+}
+
+article .question-content {
+  margin: 10px 0;
+}
+
+@media (min-width: 996px) {
+  article .question-content {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 996px) {
+  article .question-content {
+    overflow: hidden;
+  }
+}
+
+article .question-content a {
+  color: #00AAD5;
+  font-family: geomanistmedium, sans-serif;
+  text-decoration: underline;
+}
+
+.info {
+  font-family: geomanistregular, sans-serif;
+  color: #1F4E5A;
+  font-size: 14px;
+  font-weight: inherit;
+  clear: both;
+}
+
+.info .content {
+  padding: 0 10px;
+  width: 100%;
+}
+
+@media (min-width: 996px) {
+  .info .content {
+    padding: 0 20px;
+  }
+}
+
+.info .content tbody {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info .content tbody tr {
+  word-break: break-word;
+  padding: 0;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .info .content tbody tr {
+    color: #A4C0C7;
+  }
+}
+
+@media (max-width: 360px) {
+  .info .content tbody tr {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.info .content tbody tr.full {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.info .content tbody tr th {
+  font-family: 'geomanistmedium', sans-serif;
+  display: block;
+  margin: 6px 0 5px 50px;
+  padding: 0;
+  line-height: 1;
+  text-align: left;
+}
+
+.info .content tbody tr td {
+  vertical-align: middle;
+  padding: 0 0 0 8px;
+  text-align: left;
+  line-height: 1;
+}
+
+.info .content tbody tr td:first-child {
+  width: 40px;
+  float: left;
+  padding: 0;
+  display: table-row;
+  margin: 0;
+}
+
+.info .content tbody tr td label {
+  display: block;
+  font-weight: 600;
+}
+
+.info .content tbody tr td a {
+  color: #00AAD5;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .info .content tbody tr td a {
+    color: white;
+  }
+}
+
+.info .content tbody tr td img {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.info .content tbody tr td div:last-child {
+  font-weight: 600;
+  display: inline-block;
+  color: #00AAD5;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .info .content tbody tr td div:last-child {
+    color: white;
+  }
+}
+.versions {
+  font-family: geomanistregular, sans-serif;
+  color: #1F4E5A;
+  font-size: 14px;
+  font-weight: inherit;
+  margin-top: 40px;
+}
+
+@media (min-width: 996px) {
+  .versions .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.versions .content div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 40px 110px 1fr;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .versions .content div {
+    color: white;
+  }
+}
+
+@media (min-width: 996px) {
+  .versions .content div {
+    margin-right: 10px;
+  }
+}
+
+.versions .content div .version {
+  font-family: geomanistmedium, sans-serif;
+  color: #00AAD5;
+  font-size: 12px;
+  font-weight: inherit;
+  margin: 0 10px;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 4;
+  align-self: center;
+}
+
+@media (min-width: 996px) {
+  .versions .content div .version {
+    word-break: break-all;
+  }
+}
+
+.versions .content div .type {
+  background: #ccc;
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.versions .content div .type.apk {
+  background: #73C89A;
+}
+
+.versions .content div .type.xapk {
+  background: #B79DC4;
+}
+
+.versions .content div .date {
+  font-size: 12px;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: start;
+  margin: 0 10px;
+}
+
+.versions .content div .sdkVersion {
+  font-size: 12px;
+  justify-self: end;
+  align-self: center;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+
+.versions .content div span {
+  font-weight: 300;
+}
+@media (prefers-color-scheme: dark) {
+.detail .icon img {color: #A4C0C7;}
+.detail .info h1, .detail h2 {color:white;}
+.detail .info .autor, .detail .stats {color:#A4C0C7;}
+.detail .info .version {color:#00AAD5;}
+.detail h2 {color:#A4C0C7;}
+.button.version {border: 1px solid white;color: white;}
+article {color: #A4C0C7;}
+}
+@media (min-width: 425px) {
+.button-group {display: block;float: left;}
+.button.download {min-width: 322px; width: fit-content;}
+section {clear: both;}
+.button.version {margin-top: 36px;}
+}
+@media (min-width: 996px) {
+.detail {padding: 10px 20px 20px;}
+.detail > div {margin-bottom: 0px;}
+.detail .icon img {margin: 0;}
+.detail .info h1 {font-size: 36px;line-height: 32px;}
+.detail .info .version {font-size: 14px;}
+.detail .info .autor {margin-bottom: 2px; font-size: 14px;}
+.detail h2 {font-size: 16px;margin: 5px 0;padding: 10px 0 10px;}
+.detail .stats {font-size: 14px;padding: 0;height: 20px;line-height: 23px;}
+.detail .stats div {padding: 0 20px;}
+.button.download, .button.last {min-width: 300px;display: inline-block;}
+.button.version {margin-top: 46px;}
+article {padding: 20px; font-size: 16px;}
+article h2 {font-family: 'geomanistmedium', sans-serif;font-size: 18px;}
+.detail .info span.onBoard {margin: 5px 5px 0 0;}
+}
+@media (max-width: 425px) {
+.button.last {margin: 10px;display: block;}
+.button.download {margin: 10px;display: block; width: calc(100% - 20px);}
+}
+.detail .info {
+padding: 0 10px 10px 0
+}
+.detail .info .autor a {
+margin-right: 5px;
+}
+.detail .stats img {
+margin-right: 5px;
+vertical-align: initial;
+}
+.detail .stats div {
+border-left: 1px solid #A4C0C7;
+padding: 0 10px;
+}
+.detail .stats div:first-child {
+border: none;
+padding-left: 0;
+cursor: pointer;
+}
+.button {
+padding: 10px 20px;
+display: inline-block;
+vertical-align: bottom;
+margin: 10px 0 10px 10px;
+color: white;
+border-radius: 10px;
+z-index: 1;
+position: relative;
+}
+.button.download, .button.last {
+text-align: left;
+}
+@media (min-width: 996px) {
+.detail .stats img {
+vertical-align: initial;
+}
+.button {
+margin: 20px 0 20px 20px;
+}
+}
+
+
+.gallery {overflow-x: auto;overflow-y: hidden;white-space: nowrap;-webkit-overflow-scrolling: touch;display: inline-flex;width: 100%;height: 152px;padding: 0 10px 10px;box-sizing: border-box;}
+.gallery div img {width: auto;height: max-content;border-radius: 10px;border:1px solid #ccc;min-height: 100px;font-size: 10px;overflow: hidden;white-space: break-spaces;text-align: center;}
+@media (min-width: 996px) {
+.gallery {padding: 0 20px 10px;height: fit-content;min-height: 102px;overflow-x: overlay;scrollbar-color: #00AAd5 #eeeeee;scrollbar-width: thin;}
+.gallery::-webkit-scrollbar {height: 5px;cursor: pointer;}
+.gallery:hover::-webkit-scrollbar {height: 10px;}
+.gallery::-webkit-scrollbar-thumb {background:#00AAd5;border-radius: 100px;height: 2px;cursor: pointer;}
+.gallery::-webkit-scrollbar-track {background: #eee; height: 7px; border-radius: 100px;}
+}
+@media (prefers-color-scheme: dark) {
+.gallery div img {border: 0;}
+.gallery::-webkit-scrollbar-track {background: #333;}
+.gallery {scrollbar-color: #00AAd5 #333;}
+}
+.gallery div {
+margin-right: 10px;
+cursor: pointer;
+padding-right: 2px;
+}
+
+/* Fim post. */
