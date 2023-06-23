@@ -1,8 +1,7 @@
 /* Home, Post style, baixar style. */
-*{
-margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;text-rendering: geometricPrecision;}
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,figure,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,nav,object,p,picture,pre,q,s,samp,section,small,source,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;text-rendering: geometricPrecision;}
 html {overflow-y: scroll;}
-
+a{text-decoration: none;color: inherit;cursor:pointer;}
 .item-row-author .content {
 width: 100%;
 height: auto;
