@@ -1,0 +1,36 @@
+
+<p>Contador de Downloads: <span id="contador"></span></p>
+<button onclick="incrementarContador()">Clique aqui para baixar</button>
+
+<script>
+  function atualizarContador() {
+    fetch('https://raw.githubusercontent.com/currentapk/currentapk.github.io/main/sitecontador/contador.txt')
+      .then(response => response.text())
+      .then(data => {
+        const contadorElemento = document.getElementById('contador');
+        contadorElemento.innerHTML = data;
+      });
+  }
+
+  function incrementarContador() {
+    fetch('https://raw.githubusercontent.com/currentapk/currentapk.github.io/main/sitecontador/contador.txt')
+      .then(response => response.text())
+      .then(data => {
+        const contadorAtualizado = parseInt(data) + 1;
+        fetch('https://raw.githubusercontent.com/currentapk/currentapk.github.io/main/sitecontador/contador.txt', {
+          method: 'POST',
+          body: contadorAtualizado.toString()
+        })
+          .then(() => {
+            atualizarContador();
+          })
+          .catch(error => {
+            console.error('Erro ao atualizar o contador:', error);
+          });
+      });
+  }
+
+  window.onload = function() {
+    atualizarContador();
+  };
+</script>
