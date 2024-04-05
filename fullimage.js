@@ -15,9 +15,9 @@ function openFullscreen(index) {
   fullscreenDiv.style.display = 'flex';
   fullscreenDiv.innerHTML = `
     <img src="${images[index].src}" style="max-width: 90%; max-height: 90%;" />
-    <button class="button f1" onclick="closeFullscreen()">close</button>
-    <button class="button a1" onclick="showPrev()">prev</button>
-    <button class="button p1" onclick="showNext()">next</button>
+    <button class="buttonGallery f1" onclick="closeFullscreen()">close</button>
+    <button class="buttonGallery a1" onclick="showPrev()">prev</button>
+    <button class="buttonGallery p1" onclick="showNext()">next</button>
   `;
   document.body.appendChild(fullscreenDiv);
 }
